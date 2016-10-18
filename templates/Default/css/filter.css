@@ -1,0 +1,130 @@
+
+.tab-content {
+    margin: 150px auto;
+    max-width: 1180px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 1px rgba(27, 27, 27, 0.29);
+    padding: 20px;
+}
+
+.tab-content input, #give_rent_form .city_form_bl select, #rooms_num, .places_form_bl select,
+#give_rent_form select {
+    background-color: #f3f3f3;
+    border: 1px solid #ececec;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26) inset;
+    height: 45px;
+    margin: 10px 0;
+    padding: 0 0 0 10px;
+    width: 200px;
+}
+
+.footer_for_bl select, .footer_for_bl input,
+.roms_num_bl select {
+    max-width: 120px;
+}
+#give_rent label{
+    font: 14px/16px "MyriadPro-Regular",sans-serif;
+}
+#btn_g_rent {
+    background-color: #b5575f;
+    border: medium none;
+    color: #ffffff;
+    font-family: "MyriadPro-Bold", sans-serif;
+    font-size: 18px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 1.2;
+    padding: 10px;
+    margin: 31px 50px 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 200px;
+    transition: .3s;
+}
+#btn_g_rent:hover{
+    background-color:  #c96a72;
+}
+#give_rent label::after{
+    content:'*';
+    color: #b5575f;
+}
+#give_rent_form>div, .footer_for_bl>div, .head_price>div, .tab-content .tab-pane,
+.head_area_m,.area_form_bl {
+    display: flex;
+    flex-direction: column;
+}
+.footer_for_bl>div{
+    margin-left: 30px;
+}
+.footer_for_bl>div:first-child{
+    margin-left: 0;
+}
+
+.head_price,
+.head_area_m {
+    display: flex;
+    flex-direction: row;
+}
+.head_price>input,
+.head_area_m>input{
+    align-self: flex-end;
+}
+.head_price>div,
+.head_area_m>div{
+    margin-right: 30px;
+}
+.head_price div:last-child input, .head_price div:last-child label {
+    margin-left: 30px;
+}
+
+#give_rent_form, .footer_for_bl {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header_filter,
+.button_category{
+    display: flex;
+    padding-bottom: 5px;
+}
+.footer_for_bl .roms_num_bl{
+    margin-left: 0;
+}
+.footer_for_bl .area_hov{
+    display: flex;
+    flex-direction: column;
+}
+.header_filter h2{
+    text-transform: none;
+    font: 30px/34px "MyriadPro-Regular", sans-serif;
+    margin-right: 13%;
+}
+.button_category h4{
+    font:18px/20px  "MyriadPro-Bold", sans-serif;
+}
+.buy_bt,
+.rent_bt{
+    cursor: pointer;
+    padding: 22px 20px 8px;
+    margin-right: 20px;
+    background: linear-gradient(0deg, #e3e3e3 0%, white 100%);
+    transition: .2s;
+}
+.buy_bt:hover,
+.rent_bt:hover{
+    color: #b5575f;
+    -webkit-box-shadow: inset 1px 3px 6px 0 rgba(0, 0, 0, 0.63);
+    box-shadow: inset 1px 3px 6px 0 rgba(0, 0, 0, 0.63);
+}
+#give_rent select{
+    position: relative;
+}
+#give_rent select:after{
+    content: ">";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-color: red;
+}
